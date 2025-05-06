@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#c6d7e7] relative">
+    <div class="relative">
+      <div class="absolute top-0 left-0 w-full h-full">
+        <div class="relative h-full w-full">
+          <div class="RED_WIRE absolute top-[10%] left-[2%] w-[0.16%] h-[60%] bg-[#af2924]"></div>
+          <div class="RED_WIRE absolute top-[10%] left-[2%] w-[10%] h-[0.30%] bg-[#af2924]"></div>
+          <div class="RED_WIRE absolute top-[70%] left-[2%] w-[10%] h-[0.30%] bg-[#af2924]"></div>
+          <div class="BLACK_WIRE absolute top-[15%] left-[4%] w-[0.18%] h-[50%] bg-black"></div>
+          <div class="BLACK_WIRE absolute top-[15%] left-[4%] w-[10%] h-[0.30%] bg-black"></div>
+          <div class="BLACK_WIRE absolute top-[65%] left-[4%] w-[10%] h-[0.30%] bg-black"></div>
+          <div class="BLACK_WIRE absolute top-[13%] left-[86%] w-[10%] h-[0.30%] bg-black"></div>
+          <div class="BLACK_WIRE absolute top-[13%] left-[96%] w-[0.17%] h-[21.5%] bg-black"></div>
+          <div class="BLACK_WIRE absolute top-[34.2%] left-[69%] w-[27%] h-[0.30%] bg-black"></div>
+          <div class="RED_WIRE absolute top-[16.9%] left-[84%] w-[10%] h-[0.30%] bg-[#af2924]"></div>
+          <div class="RED_WIRE absolute top-[16.9%] left-[94%] w-[0.17%] h-[13%] bg-[#af2924]"></div>
+          <div class="RED_WIRE absolute top-[29.6%] left-[67.05%] w-[27%] h-[0.35%] bg-[#af2924]"></div>
+        </div>
+      </div>
+      <div class="relative z-[10] h-[250px] sm:h-[400px] md:h-[500px] xl:h-screen w-full flex">
+        <div class="BLACK_WIRE absolute z-[11] top-[52%] left-[62%] w-[7%] h-[0.30%] bg-black"></div>
+        <div class="BLACK_WIRE absolute z-[11] top-[34.5%] left-[69%] w-[0.16%] h-[17.8%] bg-black"></div>
+        <div class="BLACK_WIRE absolute z-[11] top-[42%] left-[62.2%] w-[5%] h-[0.30%] bg-[#af2924]"></div>
+        <div class="BLACK_WIRE absolute z-[11] top-[29.9%] left-[67.01%] w-[0.16%] h-[12.2%] bg-[#af2924]"></div>
+        <img src="./(Final)Product image1.png" alt="" class="absolute h-[55%] w-[32%] top-[30%] left-[34%]" />
+        <div class="absolute h-[55%] w-[32%] top-[30%] left-[34%]">
+          <div class="md:hidden absolute z-[10] top-[-32%] left-[3.5%] h-[24%] w-[62%] bg-black flex items-center justify-center">
+            <div class="h-[80%] w-[90%] bg-[#b7d50a] flex items-center justify-center">
+              <div class="h-[80%] w-[95%] flex justify-evenly flex-col gap-[20%]">
+                <p class="responsive-text text-[1.5vw] leading-none">Voltage : 12.5 V</p>
+                <p class="responsive-text text-[1.5vw] leading-none">Current : 48.5 A</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="./display-shadow.png" alt="" class="md:hidden absolute z-[10] top-[-8.1%] left-[3.5%] h-[30%] w-[62%]" />
+          <div class="relative h-full w-full">
+            <div id="display" class="absolute flex bg-black justify-center items-center top-[21.5%] left-[18%] h-[14.5%] w-[24%]">
+              <div class="absolute left-[10.5%] h-[70%] w-[80%] bg-[#b7d50a]">
+                <div class="h-full w-full relative flex justify-center items-center">
+                  <div class="absolute flex flex-col justify-evenly gap-[5%] text-[13px] h-[90%] w-[95%]">
+                    <p class="responsive-text hidden md:block text-[0.7vw] leading-none">Voltage : 12.5 V</p>
+                    <p class="responsive-text hidden md:block text-[0.7vw] leading-none">Current : 48.5 A</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute h-[7%] w-[3.5%] top-[73%] left-[36.70%] rounded-full overflow-hidden">
+          <div class="relative h-full w-full">
+            <div class="rounded-2xl shadow-xl max-w-[200px] w-full">
+              <div class="flex flex-col items-center">
+                <div id="needleContainer" class="rotate-[240deg] absolute top-[10%] left-[10%] h-[80%] w-[80%]">
+                  <img src="./needle.png" alt="needle" class="h-full rotate-[-120deg] w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./pipe.png" alt="Pipe" class="absolute z-[1] h-[7%] w-[12.35%] top-[71%] left-[22.2%]" />
+        <img src="./valv-off.png" id="valveOff" alt="Valve Off" class="absolute z-[1] h-[7%] w-[3.5%] top-[68.8%] left-[26.5%]" />
+        <img src="./valv-on.png" id="valveOn" alt="Valve On" class="hidden absolute z-[1] w-[4.5%] h-[3%] top-[73.05%] left-[26.5%]" />
+        <div class="absolute z-[12] top-[72.5%] left-[22.65%] w-[11.35%] h-[3.5%]">
+          <div class="relative size-full">
+            <div class="h-full w-[40%] flex justify-center translate-x-[80%]">
+              <div class="hidden md:block py-4 absolute bg-[#486a97] h-[420%] w-[150%] top-[130%] left-[-20%] border-[5px] rounded-xl border-white flex items-center justify-center">
+                <div class="size-[90%] m-auto flex flex-col gap-[15%] items-center justify-center">
+                  <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="h2ValvCheckbox" class="sr-only peer" />
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+                    ></div>
+                  </label>
+                  <p class="text-white text-[1.5vw] xl:text-[1.25vw]">H<sub>2</sub> Valv</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[30%]">
+          <div class="h-[40%] w-full"><img src="./(Final)solar panel.png" alt="" class="h-[80%] w-[75%] ml-auto" /></div>
+          <div class="h-[60%] w-full"><img src="./(Final)Hydrogen plant image.png" alt="" class="h-[90%] w-[70%] translate-x-[20%]" /></div>
+        </div>
+        <div class="w-[40%] flex items-center">
+          <div class="min-w-[80%] max-w-[80%] mx-auto"></div>
+        </div>
+        <div class="w-[30%]">
+          <div class="h-[40%]">
+            <div class="relative left-[-50%] top-[-35%] h-[150%] w-[150%] mx-auto aspect-video overflow-hidden">
+              <img src="./WhatsApp Image 2025-04-24 at 4.39.50 PM-Photoroom.png" alt="Image 1" class="absolute top-0 left-0 w-full h-full object-contain hidden active" />
+              <img src="./WhatsApp Image 2025-04-24 at 4.39.50 PM-Photoroom.png" alt="Image 1" class="absolute top-0 left-0 w-full h-full object-contain active" />
+              <img src="./WhatsApp Image 2025-04-24 at 4.39.51 PM (1) (1)-Photoroom.png" alt="Image 2" class="absolute top-0 left-0 w-full h-full object-contain hidden" />
+              <img src="./WhatsApp Image 2025-04-24 at 4.39.51 PM-Photoroom.png" alt="Image 3" class="absolute top-0 left-0 w-full h-full object-contain hidden" />
+              <img src="./headlight.png" alt="Headlight" id="headlight" class="absolute top-0 left-0 w-full h-full object-contain hidden" />
+              <img src="./Car wiper gif.gif" alt="Car Wiper" id="wiper" class="absolute top-[33%] left-[46%] w-auto h-[7%] hidden" />
+              <img src="./static wiper.png" alt="Car Wiper Static" id="wiper-static" class="absolute top-[33%] left-[46%] w-auto h-[7%]" />
+            </div>
+          </div>
+          <div class="h-[60%]">
+            <div class="hidden md:block relative z-[10] w-[100px] md:w-[200px] xl:w-[250px] bg-[#486a97] border-[7px] py-5 space-y-2 rounded-[25px] border-white text-white mx-auto translate-y-[35%]">
+              <div class="flex">
+                <div class="w-1/2 flex flex-col items-center justify-start">
+                  <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="hornController" class="sr-only peer" />
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+                    ></div>
+                  </label>
+                  <p class="text-white text-center text-[1.5vw] xl:text-[1.25vw]">Horn</p>
+                </div>
+                <div class="w-1/2 flex flex-col items-center justify-start">
+                  <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="wiperController" class="sr-only peer" />
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+                    ></div>
+                  </label>
+                  <p class="text-white text-center text-[1.5vw] xl:text-[1.25vw]">Wiper</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="w-1/2 flex flex-col items-center justify-start">
+                  <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="lightController" class="sr-only peer" />
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+                    ></div>
+                  </label>
+                  <p class="text-white text-center text-[1.5vw] xl:text-[1.25vw]">Lights</p>
+                </div>
+                <div class="w-1/2 flex flex-col items-center justify-start">
+                  <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="vehicleMotorController" class="sr-only peer" />
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+                    ></div>
+                  </label>
+                  <p class="text-white text-center text-[1.5vw] xl:text-[1.25vw]">
+                    Vehicle <br />
+                    Motor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-y-1 md:hidden bg-[#486a97] border-[7px] py-5 rounded-[25px] border-white text-white px-10 mx-5">
+      <div class="flex">
+        <div class="w-1/2 flex items-center gap-2.5">
+          <p class="text-[4vw] sm:text-[3vw]">H<sub>2</sub> Valv</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="h2ValvCheckbox" class="sr-only peer" />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+            ></div>
+          </label>
+        </div>
+        <div class="w-1/2 flex items-center gap-2.5">
+          <p class="text-[4vw] sm:text-[3vw]">Light</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="lightController" class="sr-only peer" />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+            ></div>
+          </label>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="w-1/2 flex items-center gap-2.5">
+          <p class="text-[4vw] sm:text-[3vw]">Horn</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="hornController" class="sr-only peer" />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+            ></div>
+          </label>
+        </div>
+        <div class="w-1/2 flex items-center gap-2.5">
+          <p class="text-[4vw] sm:text-[3vw]">Wiper</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="WiperController" class="sr-only peer" />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+            ></div>
+          </label>
+        </div>
+      </div>
+      <div class="flex items-center gap-2.5">
+        <p class="text-[4vw] sm:text-[3vw]">Vehicle Motor</p>
+        <label class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="vehicleMotorController" class="sr-only peer" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#42ce05] dark:peer-checked:bg-[#42ce05]"
+          ></div>
+        </label>
+      </div>
+    </div>
+    <script src="./isCarRunning.js"></script>
+  </body>
+</html>
